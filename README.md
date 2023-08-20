@@ -1,2 +1,2 @@
-# project1
-Just practicing Code
+# Update later
+Don’t forget to update the README file when you are done. It should contain some basic description of the project and instructions on how other people could launch your project on their local machine if they wanted to.
