@@ -1,2 +1,4 @@
-# Update later
-Don’t forget to update the README file when you are done. It should contain some basic description of the project and instructions on how other people could launch your project on their local machine if they wanted to.
+Cars EDA project
+
+The following app opens a clean/unclean version of the vehicles_us.csv,
+aswell as some basic charts. You can access these features on your device by going to https://carseda.onrender.com/
