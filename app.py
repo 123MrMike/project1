@@ -5,7 +5,7 @@ import plotly.express as px
 st.header("Cars EDA")
 st.write("In this project we will import the vehicles_us.csv and performa simple EDA")
 
-df=pd.read_csv('https://raw.githubusercontent.com/123MrMike/project1/main/vehicles_us.csv')
+df=pd.read_csv('vehicles_us.csv')
 clean_df=df.dropna().reset_index(drop=True)
 
 st.subheader("Let's look at the dataset")
