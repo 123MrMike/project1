@@ -24,10 +24,10 @@ st.markdown("Ok, so the data seems to be unclean. I'm concerned about the thousa
 st.write("Even though we eliminate over 2/3's of our data by excluding all Nulls, I believe 14,852 entries is still plenty of data for a simple EDA. We'll just have to bear in mind that our Statistc population is now much smaller. Now let's visualize our DataFrame.")
 
 st.subheader("EDA")
-st.write("Next we'll make a couple of Histograms and scatterplots")
+st.write("Next we'll explore the Dataset by asking, 'What kind of cars are people buying?' and 'For how much?' ")
 
 st.write(px.histogram(clean_df, x='paint_color', title='Color Distribution'))
-st.write("It looks like people like white cars the most. Black comes in second, followed by silver and blue.")
+st.write("It looks like people like white cars the most. Black comes in second, followed by silver and blue. Now how much are people paying for cars according to our data?")
 
 st.write(px.histogram(clean_df, x='price', title='Price Distribution'))
 st.write("The price distribution is heavily skewed to the left, suggesting great outliers in expensive cars.")
@@ -47,3 +47,6 @@ st.write("- IQR = Q3-Q1")
 
 st.write("Our Q3 is 22,000. Our Q1 is 7,000. 22,000 - 7,000 = 15,000 is our IQR.")
 st.write("Which means the middle 50 percent of the cars in our data set are *actually* around the 15,000 dollar range, with a Median of 13,500. This statistical analysis is a great way to factor out extreme outliers.")
+
+st.subheader("Conclusion")
+st.write("According to our limited dataset, people tend to buy white, black, and blue cars most often.<br>The price most people are willing pay is around 15,000 Dollars. Outliers like expensive Hobbyists are very few and far between. They do exist, but they are far from representing the total population according to Median statistics.")
